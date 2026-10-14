@@ -1,0 +1,43 @@
+{
+  "trainable_params": 148426752,
+  "peak_vram_gb": 6.882350444793701,
+  "train_minutes": 59.616482878983334,
+  "fingerprint": "a065c2ae9eccabef40d208d955d86fd8e951c7ba4b799fc61d7b58a21e96a004",
+  "steps": 300,
+  "train_images": 1422,
+  "matched_modules": 348,
+  "config": {
+    "name": "E3",
+    "description": "E2 + LoRA trên các khối attention và MLP của ViT.",
+    "model_id": "Qwen/Qwen3-VL-4B-Instruct",
+    "quantization": "nf4-4bit",
+    "lora": {
+      "r": 16,
+      "alpha": 32,
+      "dropout": 0.05,
+      "targets": "llm+vit"
+    },
+    "train_projector": true,
+    "lr": 0.0002,
+    "batch_size": 1,
+    "grad_accum": 8,
+    "max_steps": 300,
+    "seed": 42,
+    "coord": "norm1000",
+    "train_fraction": 1.0,
+    "inference_batch_size": 1,
+    "max_new_tokens": 256
+  },
+  "annotation_audit": {
+    "images": 1422,
+    "boxes": 3515,
+    "expanded_tiny_boxes": 0,
+    "zero_area_labels_omitted_from_training_answers": 1,
+    "coord": "norm1000"
+  },
+  "amp_policy": "retry_same_batch_v1",
+  "gradient_overflows": 0,
+  "final_amp_scale": 4096.0,
+  "student_name": "Phạm Văn Kiên",
+  "student_id": "2A202602590"
+}

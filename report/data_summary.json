@@ -1,0 +1,56 @@
+{
+  "dataset_version": "d10-21e4070301",
+  "seed": "day10",
+  "salt": 0,
+  "classes": [
+    "pothole",
+    "crack",
+    "manhole"
+  ],
+  "counts": {
+    "train": {
+      "images": 1422,
+      "boxes": {
+        "pothole": 1074,
+        "crack": 1750,
+        "manhole": 691
+      }
+    },
+    "val": {
+      "images": 276,
+      "boxes": {
+        "pothole": 66,
+        "crack": 470,
+        "manhole": 103
+      }
+    },
+    "test": {
+      "images": 311,
+      "boxes": {
+        "pothole": 121,
+        "crack": 299,
+        "manhole": 163
+      }
+    }
+  },
+  "groups": {
+    "vlc-2025-02-19-13": "train",
+    "vlc-2025-02-19-15": "train",
+    "phone-20250216": "train",
+    "num-1": "train",
+    "phone-20250219": "train",
+    "num-0": "train",
+    "vlc-2025-03-16-15": "train",
+    "vlc-2025-02-19-14": "train",
+    "vlc-2025-02-26-20": "train",
+    "vlc-2025-02-18-18": "val",
+    "num-4": "test",
+    "vlc-2025-02-19-17": "test",
+    "vlc-2025-02-18-17": "train",
+    "vlc-2025-02-18-23": "test",
+    "phone-20250223": "train",
+    "num-3": "train",
+    "vlc-2025-02-19-16": "val",
+    "num-2": "train"
+  }
+}

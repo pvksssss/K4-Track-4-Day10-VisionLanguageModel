@@ -1,0 +1,7 @@
+{
+  "images": 1422,
+  "boxes": 3515,
+  "expanded_tiny_boxes": 0,
+  "zero_area_labels_omitted_from_training_answers": 1,
+  "coord": "norm1000"
+}

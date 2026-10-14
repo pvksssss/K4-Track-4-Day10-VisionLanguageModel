@@ -1,0 +1,40 @@
+{
+  "trainable_params": 33030144,
+  "peak_vram_gb": 5.085188388824463,
+  "train_minutes": 52.12304634811667,
+  "fingerprint": "4eb1df11761c0d48b0a467739dc9b88582f2dd6e781cd473d0e2fa40b0604d02",
+  "steps": 300,
+  "train_images": 1422,
+  "matched_modules": 252,
+  "config": {
+    "name": "E1",
+    "description": "LoRA chỉ trên LLM; đóng băng ViT và projector.",
+    "model_id": "Qwen/Qwen3-VL-4B-Instruct",
+    "quantization": "nf4-4bit",
+    "lora": {
+      "r": 16,
+      "alpha": 32,
+      "dropout": 0.05,
+      "targets": "llm"
+    },
+    "train_projector": false,
+    "lr": 0.0002,
+    "batch_size": 1,
+    "grad_accum": 8,
+    "max_steps": 300,
+    "seed": 42,
+    "coord": "norm1000",
+    "train_fraction": 1.0,
+    "inference_batch_size": 1,
+    "max_new_tokens": 256
+  },
+  "annotation_audit": {
+    "images": 1422,
+    "boxes": 3515,
+    "expanded_tiny_boxes": 0,
+    "zero_area_labels_omitted_from_training_answers": 1,
+    "coord": "norm1000"
+  },
+  "student_name": "Phạm Văn Kiên",
+  "student_id": "2A202602590"
+}

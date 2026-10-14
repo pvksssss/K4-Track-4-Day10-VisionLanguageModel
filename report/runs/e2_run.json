@@ -1,0 +1,43 @@
+{
+  "trainable_params": 142135296,
+  "peak_vram_gb": 6.745553970336914,
+  "train_minutes": 52.33225066476667,
+  "fingerprint": "9e2def39c4911fe2c236fa5fa7cc158d30dc510beddc3ba30bbe8c7710077a63",
+  "steps": 300,
+  "train_images": 1422,
+  "matched_modules": 252,
+  "config": {
+    "name": "E2",
+    "description": "E1 + mở đầy đủ projector (visual.merger và visual.deepstack_merger_list).",
+    "model_id": "Qwen/Qwen3-VL-4B-Instruct",
+    "quantization": "nf4-4bit",
+    "lora": {
+      "r": 16,
+      "alpha": 32,
+      "dropout": 0.05,
+      "targets": "llm"
+    },
+    "train_projector": true,
+    "lr": 0.0002,
+    "batch_size": 1,
+    "grad_accum": 8,
+    "max_steps": 300,
+    "seed": 42,
+    "coord": "norm1000",
+    "train_fraction": 1.0,
+    "inference_batch_size": 1,
+    "max_new_tokens": 256
+  },
+  "annotation_audit": {
+    "images": 1422,
+    "boxes": 3515,
+    "expanded_tiny_boxes": 0,
+    "zero_area_labels_omitted_from_training_answers": 1,
+    "coord": "norm1000"
+  },
+  "amp_policy": "retry_same_batch_v1",
+  "gradient_overflows": 0,
+  "final_amp_scale": 4096.0,
+  "student_name": "Phạm Văn Kiên",
+  "student_id": "2A202602590"
+}
