@@ -12,3 +12,6 @@ adapter*/
 .ipynb_checkpoints/
 .pytest_cache/
 .DS_Store
+*.zip
+# Original downloaded notebook; publish the identical lab_day10_executed.ipynb copy.
+notebook495605e4e4.ipynb
